@@ -58,11 +58,12 @@
 
 	<ItemGroup>
 	  <Folder Include="Helpers\" />
-	  <Folder Include="Platforms\iOS\Services\" />
-	  <Folder Include="Services\Interfaces\" />
 	</ItemGroup>
 
 	<ItemGroup>
+	  <MauiXaml Update="Views\HistoryView.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Views\MapView.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
