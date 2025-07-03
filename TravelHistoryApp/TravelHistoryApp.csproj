@@ -58,8 +58,6 @@
 
 	<ItemGroup>
 	  <Folder Include="Helpers\" />
-	  <Folder Include="Platforms\iOS\Services\" />
-	  <Folder Include="Services\Interfaces\" />
 	</ItemGroup>
 
 	<ItemGroup>

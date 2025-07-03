@@ -1,4 +1,6 @@
 ﻿using Microsoft.Extensions.Logging;
+using TravelHistoryApp.Services;
+using TravelHistoryApp.Services.Interfaces;
 using TravelHistoryApp.ViewModels;
 using TravelHistoryApp.Views;
 
@@ -21,6 +23,8 @@ public static class MauiProgram
 #if DEBUG
 		builder.Logging.AddDebug();
 #endif
+
+        builder.Services.AddSingleton<ILocationService, LocationService>();
 
         builder.Services.AddSingleton<MapViewModel>();
         builder.Services.AddTransient<MapView>(s => new MapView()
