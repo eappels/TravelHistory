@@ -55,7 +55,10 @@ public partial class MapViewModel : ObservableObject, IDisposable
                 result = await App.Current.Windows[0].Page.DisplayAlert("Track saved", "Do you want to display the saved track?", "Yes", "No");
                 if (result == true)
                 {
-                    await Shell.Current.GoToAsync("///HistoryView");
+                    await Shell.Current.GoToAsync($"///HistoryView", new Dictionary<string, object>
+                    {
+                        { "track", Track }
+                    });
                 }
                 else
                 {

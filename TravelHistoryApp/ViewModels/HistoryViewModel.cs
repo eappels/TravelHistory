@@ -1,5 +1,4 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
-using Microsoft.Maui.Controls.Maps;
 
 namespace TravelHistoryApp.ViewModels;
 
@@ -9,7 +8,4 @@ public partial class HistoryViewModel : ObservableObject
     {
         
     }
-
-    [ObservableProperty]
-    private Polyline track = new();
 }

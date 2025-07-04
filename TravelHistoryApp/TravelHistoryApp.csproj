@@ -26,8 +26,9 @@
 	</PropertyGroup>
 
 	<PropertyGroup Condition="'$(TargetFramework)'=='net9.0-ios'">
-	  <CodesignKey>Apple Development: Created via API (8AHUUT62RU)</CodesignKey>
-	  <CodesignProvision>VS: WildCard Development</CodesignProvision>
+	  <CodesignKey>Apple Development: Created via API (873HWZ9AQY)</CodesignKey>
+	  <CodesignProvision>VS: be.trackme.travelhistoryapp Development</CodesignProvision>
+	  <ProvisioningType>automatic</ProvisioningType>
 	</PropertyGroup>
 
 	<ItemGroup>
